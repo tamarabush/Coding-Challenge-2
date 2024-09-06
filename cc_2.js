@@ -9,3 +9,9 @@ console.log(tip); //Output = 37.5
 
 
 
+// TASK 2 - Output Details:
+
+let totalAmount = bill + tip; // Output = 287.5 (sum of bill and tip)
+
+console.log(`The bill is $${bill}, the tip is $${tip}, and the total value is $${totalAmount}.`); 
+//The bill is $250, the tip is $37.5, and the total value is $287.5.
