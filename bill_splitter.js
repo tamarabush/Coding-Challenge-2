@@ -33,13 +33,25 @@ console.log(`The bill is $${testBill} and the tip is $${testTip}.`); //The bill 
 
 
 // TASK 4 - Utilize Arrays:
-let bills = [275, 40, 430, 125, 555, 44] //Array of dataset 1 and 2
 
-const tips = bills.map(bill => calculateTip(bill)); //Map array of tips 
+//Calculations for dataset 1
+let bills1 = [275, 40, 430,] //Array of dataset 1 
 
-const totals = bills.map((bill, index) => bill + tips[index]); //Map array of the total bill
+const tips1 = bills1.map(bill => calculateTip(bill)); //Map array of tips for dataset 1
 
-console.log("Bills:", bills); //Output = [275, 40, 430, 125, 555, 44]
-console.log("Tips:", tips); //Output = [41.25, 8, 86, 18.75, 111, 8.8]
-console.log("Totals:", totals); //Output = [316.25, 48, 516, 143.75, 666, 52.8]
+const totals1 = bills1.map((bill, index) => bill + tips1[index]); //Map array of the total bill for dataset 1
 
+console.log("Dataset 1 Bills:", bills1); //Output = [275, 40, 430]
+console.log("Dataset 1 Tips:", tips1); //Output = [41.25, 8, 86]
+console.log("Dataset 1 Totals:", totals1); //Output = [316.25, 48, 516]
+
+//Calculations for dataset 2
+let bills2 = [125, 555, 44] //Array of dataset 2
+
+const tips2 = bills2.map(bill => calculateTip(bill)); //Map array of tips for dataset 2
+
+const totals2 = bills2.map((bill, index) => bill + tips2[index]); //Map array of the total bill for dataset 2
+
+console.log("Dataset 2 Bills:", bills2); //Output = [125, 555, 44]
+console.log("Dataset 2 Tips:", tips2); //Output = [18.75, 111, 8.8]
+console.log("Dataset 2 Totals:", totals2) //Output = [143.75, 666, 52.8]
